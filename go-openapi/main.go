@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"github.com/AartiChhasiya/swagger-go/go-swagger/controllers"
+	"github.com/AartiChhasiya/swagger-go/go-openapi/controllers"
 	"github.com/gorilla/mux"
 )
 

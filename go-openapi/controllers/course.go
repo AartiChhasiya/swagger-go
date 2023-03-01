@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/AartiChhasiya/swagger-go/go-swagger/models"
+	"github.com/AartiChhasiya/swagger-go/go-openapi/models"
 	"github.com/gorilla/mux"
 )
 
