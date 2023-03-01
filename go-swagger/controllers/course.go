@@ -3,12 +3,12 @@ package controllers
 import (
 	"encoding/json"
 	"fmt"
-	"go-swagger/models"
 	"math/rand"
 	"net/http"
 	"strconv"
 	"time"
 
+	"github.com/AartiChhasiya/swagger-go/go-swagger/models"
 	"github.com/gorilla/mux"
 )
 
@@ -34,7 +34,7 @@ func SeedData() {
 }
 
 func ServeHome(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("<h1>Welcome to API</h1>"))
+	w.Write([]byte("<h1>Welcome to API Section</h1>"))
 }
 
 func GetAllCourses(w http.ResponseWriter, r *http.Request) {
@@ -103,7 +103,7 @@ func UpdateOneCourse(w http.ResponseWriter, r *http.Request) {
 		if course.CourseId == params["id"] {
 			courses = append(courses[:index], courses[index+1:]...)
 
-			var NewCourse Course
+			var NewCourse models.Course
 			_ = json.NewDecoder(r.Body).Decode(&NewCourse)
 			NewCourse.CourseId = params["id"]
 			courses = append(courses, NewCourse)

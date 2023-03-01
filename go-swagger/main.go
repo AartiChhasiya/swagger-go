@@ -4,20 +4,16 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"go-swagger/controllers"
-	"github.com/AartiChhasiya/Golearning/buildapi/controllers"
+	"github.com/AartiChhasiya/swagger-go/go-swagger/controllers"
 	"github.com/gorilla/mux"
 )
-
 
 func main() {
 	fmt.Println("Welcome to API Section")
 
 	controllers.SeedData()
-	
-	r := mux.NewRouter()
 
-	
+	r := mux.NewRouter()
 
 	//routing
 	r.HandleFunc("/api", controllers.ServeHome).Methods("GET")
