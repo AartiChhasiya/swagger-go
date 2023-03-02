@@ -60,5 +60,9 @@ That's it! You have generated Swagger documentation for your Go API using go-ope
 
 
 
+##### 1. go get github.com/gorilla/mux
+##### 2. go get github.com/go-openapi/runtime
+##### 3. go get github.com/go-openapi/runtime/middleware
+##### 4. go mod vendor
 ##### $ go get -u github.com/go-swagger/go-swagger/cmd/swagger
 ##### $ swagger generate spec -o ./swagger.yaml –scan-models
