@@ -60,5 +60,5 @@ That's it! You have generated Swagger documentation for your Go API using go-ope
 
 
 
-go get -u github.com/go-swagger/go-swagger/cmd/swagger
-swagger generate spec -o ./swagger.yaml –scan-models
+##### $ go get -u github.com/go-swagger/go-swagger/cmd/swagger
+##### $ swagger generate spec -o ./swagger.yaml –scan-models
